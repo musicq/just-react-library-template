@@ -1,0 +1,12 @@
+# Logs
+*.log
+
+# IDE
+.idea
+.vscode
+.DS_Store
+
+# dependencies
+node_modules
+
+example/build
