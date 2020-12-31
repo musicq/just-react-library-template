@@ -5,7 +5,7 @@
     "declaration": true,
     "sourceMap": true,
     "jsx": "react",
-    "rootDir": "./",
+    "rootDir": ".",
     "outDir": "./dist",
     "removeComments": true,
     "importHelpers": true,
@@ -21,12 +21,6 @@
     "lib": [
       "ESNext",
       "DOM"
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "just-react-library-template": [
-        "src"
-      ]
-    }
+    ]
   }
 }

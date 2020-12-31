@@ -17,6 +17,7 @@ export const rollupConfigFactory = env => {
         sourcemap: true
       }
     ],
+    external: ['react', 'react-dom'],
     plugins: [
       typescript(),
       replace({

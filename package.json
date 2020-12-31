@@ -1,23 +1,26 @@
 {
-  "name": "just-react-library-template-workspace",
-  "private": true,
+  "name": "just-react-library-template",
   "version": "1.0.0",
-  "workspaces": [
-    "example",
-    "src"
-  ],
   "scripts": {
     "start": "webpack-dev-server --config build/webpack.config.js",
     "cleanup": "rimraf dist",
-    "dev": "npm run cleanup && rollup --config build/rollup.dev.js",
+    "dev": "npm run cleanup && rollup --config build/rollup.dev.js --watch",
     "build": "npm run cleanup && rollup --config build/rollup.prod.js"
   },
+  "license": "MIT",
   "dependencies": {
+    "react": ">= 16.9",
+    "react-dom": ">= 16.9",
+    "tslib": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": ">= 12",
+    "@types/react": ">= 16.9",
+    "@types/react-dom": ">= 16.9",
     "@rollup/plugin-replace": "^2.3.4",
     "@rollup/plugin-typescript": "^8.1.0",
     "autoprefixer": "^10.1.0",
     "clean-webpack-plugin": "^3.0.0",
-    "coffee-script": "^1.12.7",
     "css-loader": "^5.0.1",
     "fork-ts-checker-webpack-plugin": "^5.1.0",
     "html-webpack-plugin": "^4.4.1",
@@ -31,7 +34,6 @@
     "sass-loader": "^10.0.2",
     "style-loader": "^2.0.0",
     "ts-loader": "^8.0.3",
-    "tslib": "^2.0.3",
     "typescript": "^4.1.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
