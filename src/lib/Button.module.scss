@@ -1,0 +1,21 @@
+$bgColor: #007aff;
+$bgHover: #0a84ff;
+
+.btn {
+  background: $bgColor;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  user-select: none;
+
+  &:hover {
+    background: $bgHover;
+  }
+
+  &:active {
+    background: darken($bgHover, 10);
+  }
+}
