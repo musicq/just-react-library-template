@@ -8,7 +8,6 @@
     "rootDir": ".",
     "outDir": "./dist",
     "removeComments": true,
-    "importHelpers": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

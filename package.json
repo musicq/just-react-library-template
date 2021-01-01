@@ -7,14 +7,11 @@
     "watch": "npm run cleanup && rollup --config build/rollup.dev.js --watch",
     "build": "npm run cleanup && rollup --config build/rollup.prod.js"
   },
-  "main": "./dist/main.js",
+  "main": "./dist/index.js",
   "license": "MIT",
   "peerDependencies": {
     "react": ">= 16.9",
     "react-dom": ">= 16.9"
-  },
-  "dependencies": {
-    "tslib": "^2.0.3"
   },
   "devDependencies": {
     "@types/node": ">= 12",
