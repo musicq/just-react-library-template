@@ -12,7 +12,7 @@ export const rollupConfigFactory = env => {
     input: sourcePath('index.ts'),
     output: [
       {
-        file: outputPath('main.js'),
+        file: outputPath('index.js'),
         format: 'es',
         sourcemap: true
       }

@@ -4,13 +4,16 @@
   "scripts": {
     "start": "webpack-dev-server --config build/webpack.config.js",
     "cleanup": "rimraf dist",
-    "dev": "npm run cleanup && rollup --config build/rollup.dev.js --watch",
+    "watch": "npm run cleanup && rollup --config build/rollup.dev.js --watch",
     "build": "npm run cleanup && rollup --config build/rollup.prod.js"
   },
+  "main": "./dist/main.js",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "react": ">= 16.9",
-    "react-dom": ">= 16.9",
+    "react-dom": ">= 16.9"
+  },
+  "dependencies": {
     "tslib": "^2.0.3"
   },
   "devDependencies": {
@@ -28,7 +31,6 @@
     "prettier": "^2.1.1",
     "rollup": "^2.35.1",
     "rollup-plugin-postcss": "^4.0.0",
-    "rollup-plugin-scss": "^2.6.1",
     "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.2",

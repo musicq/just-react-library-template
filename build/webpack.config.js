@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
-const {examplePath, rootPath} = require('./paths')
+const {examplePath, rootPath, sourcePath, outputPath} = require('./paths')
 
 module.exports = {
   mode: 'development',
@@ -12,18 +12,22 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      'just-react-library-template': outputPath()
+    },
+    modules: [rootPath('node_modules'), examplePath('node_modules')]
   },
 
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.js|tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
           transpileOnly: true,
-          configFile: rootPath('tsconfig.json')
+          configFile: rootPath('tsconfig.base.json')
         }
       },
       {

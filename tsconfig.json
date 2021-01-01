@@ -1,26 +1,6 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "ESNext",
-    "declaration": true,
-    "sourceMap": true,
-    "jsx": "react",
-    "rootDir": ".",
-    "outDir": "./dist",
-    "removeComments": true,
-    "importHelpers": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "lib": [
-      "ESNext",
-      "DOM"
-    ]
-  }
+  "extends": "./tsconfig.base.json",
+  "exclude": [
+    "example"
+  ]
 }
