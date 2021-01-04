@@ -1,5 +1,5 @@
 {
-  "name": "just-react-library-template",
+  "name": "@musicq/just-react-library-template",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --config build/webpack.config.js",
@@ -47,5 +47,8 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@musicq/just-prettier-config": "^1.0.0"
   }
 }

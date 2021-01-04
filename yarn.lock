@@ -480,6 +480,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@musicq/just-prettier-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@musicq/just-prettier-config/-/just-prettier-config-1.0.0.tgz#fdc272532e4117d56e45a5597a113027d122f8a4"
+  integrity sha512-9QQucvbiWLynXcXkoZeV6nQ7raOifbikWJ4519Rdg4a6On0sB3KJoNllk+tZk4AfnUqfsiZEbhHH3RsRkf+OdQ==
+
 "@rollup/plugin-replace@^2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-replace/-/plugin-replace-2.3.4.tgz#7dd84c17755d62b509577f2db37eb524d7ca88ca"
