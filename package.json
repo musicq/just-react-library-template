@@ -4,9 +4,11 @@
   "scripts": {
     "start": "webpack-dev-server --config build/webpack.config.js",
     "cleanup": "rimraf dist",
-    "watch": "npm run cleanup && rollup --config build/rollup.dev.js --watch",
     "build": "npm run cleanup && rollup --config build/rollup.prod.js",
-    "test": "jest"
+    "build:w": "npm run cleanup && rollup --config build/rollup.dev.js --watch",
+    "test": "jest",
+    "test:w": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "main": "./dist/index.js",
   "license": "MIT",

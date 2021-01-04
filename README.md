@@ -9,6 +9,7 @@ A React library template which integrated all the things you need.
 - TypeScript
 - Code formatter
 - Code linter
+- Testing environment
 
 ## Getting start
 
@@ -26,7 +27,7 @@ cd example && yarn
 cd ..
 
 # compile library code
-yarn watch
+yarn build
 
 # start another window to run testing portal
 yarn start
@@ -36,4 +37,16 @@ yarn start
 
 ```shell
 yarn build
+
+# or watching
+yarn build:w
+```
+
+### Test
+
+```shell
+yarn test
+
+# or watching
+yarn test:w
 ```
