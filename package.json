@@ -11,6 +11,9 @@
     "test:coverage": "jest --coverage"
   },
   "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "react": ">= 16.9",
