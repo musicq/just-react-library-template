@@ -2,7 +2,7 @@ import React, {PropsWithChildren} from 'react'
 import style from './Button.module.scss'
 
 interface ButtonProps {
-  onClick: () => void
+  onClick?: () => void
 }
 
 export function Button({onClick, children}: PropsWithChildren<ButtonProps>) {
