@@ -7,8 +7,9 @@
     "build": "npm run cleanup && rollup --config build/rollup.prod.js",
     "build:w": "npm run cleanup && rollup --config build/rollup.dev.js --watch",
     "test": "jest",
-    "test:w": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:w": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "cypress open"
   },
   "main": "./dist/index.js",
   "files": [
@@ -24,6 +25,7 @@
     "@rollup/plugin-typescript": "^8.1.0",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
     "@types/jest": "^26.0.19",
     "@types/node": ">= 12",
     "@types/react": ">= 16.9",
@@ -31,6 +33,7 @@
     "autoprefixer": "^10.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
+    "cypress": "^6.2.1",
     "fork-ts-checker-webpack-plugin": "^5.1.0",
     "html-webpack-plugin": "^4.4.1",
     "identity-obj-proxy": "^3.0.0",
