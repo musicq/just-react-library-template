@@ -5,13 +5,15 @@ module.exports = {
 
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.+(ts|tsx)',
-    '<rootDir>/src/**/?(*.)+(spec|test).+(ts|tsx)'
+    '<rootDir>/src/**/?(*.)+(spec|test).+(ts|tsx)',
   ],
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
-    '^.+\\.(css|sass|scss)$': jestConfigPath('cssTransform.js')
+    '^.+\\.(css|sass|scss)$': jestConfigPath('cssTransform.js'),
   },
   moduleNameMapper: {
-    '^.\\.module\\.(css|sass|scss)$': 'identity-obj-proxy'
-  }
+    '^.\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+  },
+
+  setupFilesAfterEnv: [jestConfigPath('setupTests.ts')],
 }
